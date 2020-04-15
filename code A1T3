@@ -1,0 +1,52 @@
+1a ) using curl
+         $ curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/expression.tab >> expression.tsv
+         $ cat expression.tsv
+
+    using mysql :- 
+
+         $mysql -u awkologist -p compbiol  -e" select * from expression" >> expression.tsv
+_______________________________________________________________________________________________________________________
+
+1b) using curl :- 
+
+   curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab  >> annotation.tsv
+
+   using mysql :- 
+
+   mysql -u awkologist -p compbiol  -e" select * from expression" >> annotation.tsv
+
+__________________________________________________________________________________________________________________________
+
+1c) $ join -j 1 <(sort expression.tab) <(sort annotation) | column -t | tac
+
+________________________________________________________________________________________________________________________
+1d)ii) command to be executed in bash shell :-
+
+$ mysql -u awkologist -p compbiol  -e"  
+                 select a.gene,a.metabolism \
+                 from annotation a, annotation b \
+                 where a.metabolism=b.metabolism \
+                  and a.gene<>b.gene;"
+_____________________________________________________________________________________________________________________________
+
+2a)iii) mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach is NULL"
+
+___________________________________________________________________________________________________________________________
+2b)iii) code:-   mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate 
+                 from Member WHERE JoinDate BETWEEN "2010-01-01 00:00:00" AND "2010-12-31 00:00:00" ORDER BY JoinDate;'
+
+_________________________________________________________________________________________________________________________
+
+2c)iii) code:-
+
+   mysql -u awkologist -p compbiol -e 'SELECT m.MemberID, m.LastName, m.FirstName FROM   
+   Member m where exists (select * from Entry e where m.MemberID=e.MemberID and e.Year<>2014);'
+_____________________________________________________________________________________________________________________________
+
+2d)
+ii) mysql -u awkologist -p compbiol -e 'SELECT m.MemberID, m.LastName, m.FirstName 
+FROM Member m WHERE m.MemberID  IN (SELECT e.MemberID from Entry e Group By e.MemberID Having COUNT(DISTINCT Year) = (SELECT COUNT(DISTINCT Year) from Entry));'
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+

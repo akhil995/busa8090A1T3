@@ -1,0 +1,395 @@
+  236  sudo  systemctl restart NetworkManager.service
+  237  sudo ufw status
+  238  sudo ufw allow ssh
+  239  sudo ufw status
+  240  sudo ufw enable
+  241  sudo ufw status
+  242  sudo ufw allow 22
+  243  apt-get update
+  244  sudo apt-get update
+  245  sudo apt-get upgrade
+  246  clear
+  247  ip
+  248  ipaddress
+  249  ifconfig
+  250  exit
+  251  cd /
+  252  cd etc/ssh/
+  253  ls
+  254  cat ssh_host_rsa_key.pub 
+  255  cat ssh_config 
+  256  cat sshd_config 
+  257  clear
+  258  sudo iptables-save | less
+  259  ssh localhost
+  260  cd ..
+  261  clear
+  262  cd /
+  263  clear
+  264  ls -al 
+  265  cd .ssh
+  266  ls
+  267  vim known_hosts 
+  268  vim authorized_keys 
+  269  clear
+  270  ls
+  271  cd ..
+  272  ls
+  273  if config
+  274  ifconfig
+  275  ufw status
+  276  sudo ufw status
+  277  ls
+  278  cd ..
+  279  ls
+  280  cd /
+  281  ls
+  282  exir
+  283  clkear
+  284  clear
+  285  exit
+  286  ls
+  287  cat busa8090_s1_2020_45750297.pem 
+  288  clear
+  289  rm busa8090_s1_2020_45750297.pem 
+  290  ls
+  291  clear
+  292  exit
+  293  ls
+  294  cat file.txt 
+  295  exit
+  296  ls
+  297  rm  -rf file
+  298  clear
+  299  unalias awscon
+  300  exit
+  301  clear
+  302  mysql -u awkologist -p 
+  303  clear
+  304  sudo mysql -u awkologist -p compbiol -e'select Member.LastName,Phone from Member '
+  305  sqledit.sh
+  306  vim sqledit.sh
+  307  chmod 777 sqledit.sh 
+  308  vim sqledit.sh
+  309  ./sqledit.sh 
+  310  vim sqledit.sh
+  311  ./sqledit.sh 
+  312  vim sqledit.sh
+  313  ./sqledit.sh 
+  314  vim sqledit.sh
+  315  ./sqledit.sh 
+  316  ls
+  317  vim sqledit.sh
+  318  ./sqledit.sh 
+  319  vim sqledit.sh
+  320  ./sqledit.sh 
+  321  vim sqledit.sh
+  322  ./sqledit.sh 
+  323  vim sqledit.sh
+  324  ./sqledit.sh 
+  325  vim sqledit.sh
+  326  ./sqledit.sh 
+  327  vim sqledit.sh
+  328  ./sqledit.sh 
+  329  vim sqledit.sh
+  330  ./sqledit.sh 
+  331  mysql -u awkologist -p -e "select * from Phonelist"
+  332  vim sqledit.sh
+  333  ./sqledit.sh 
+  334  vim sqledit.sh
+  335  ./sqledit.sh 
+  336  vim sqledit.sh
+  337  ./sqledit.sh 
+  338  mysql select * from PhoneList
+  339  mysql -u awkologist -p -e " select * from PhoneList"
+  340  mysql -u awkologist -p compbiol  -e " select * from PhoneList"
+  341  vim sqledit.sh
+  342  ./sqledit.sh 
+  343  vim sqledit.sh
+  344  ./sqledit.sh 
+  345  vim sqledit.sh
+  346  ./sqledit.sh 
+  347  vim sqledit.sh
+  348  ./sqledit.sh 
+  349  vim sqledit.sh
+  350  ./sqledit.sh 
+  351  vim sqledit.sh
+  352  ./sqledit.sh 
+  353  vim sqledit.sh
+  354  ./sqledit.sh 
+  355  mysql -u awkologist -p compbiol  -e "select Firstname from Member "
+  356  mysql -u awkologist -p compbiol  -e "select Firstname,lastname from Member "
+  357  mysql -u awkologist -p compbiol  -e "select distinct Membertype from member "
+  358  mysql -u awkologist -p compbiol  -e "select distinct Membertype from Member "
+  359  mysql -u awkologist -p compbiol  -e "select distinct Membertype,lastname,firstname from Member "
+  360  mysql -u awkologist -p compbiol  -e "select distinct Membertype,lastname,firstname from Member order by lastname "
+  361  mysql -u awkologist -p compbiol  -e "select distinct Membertype,lastname,firstname from Member order by lastname,firstname "
+  362  mysql -u awkologist -p compbiol  -e "select distinct Membertype,lastname,firstname from Member order by firstname and lastname "
+  363  mysql -u awkologist -p compbiol  -e "SELECT * "
+  364  mysql -u awkologist -p compbiol  -e "SELECT SELECT *
+  365  FROM Member m
+  366  WHERE m.MemberType = 'Senior'
+  367  ORDER BY m.LastName, m.FirstName"
+  368  mysql -u awkologist -p compbiol  -e "SELECT *
+  369  FROM Member m
+  370  WHERE m.MemberType = 'Senior'
+  371  ORDER BY m.LastName, m.FirstName"
+  372  mysql -u awkologist -p compbiol  -e "SELECT firstname,lastname,membertype
+  373  FROM Member m
+  374  WHERE m.MemberType = 'Senior'
+  375  ORDER BY m.LastName, m.FirstName"
+  376  mysql -u awkologist -p compbiol  -e "SELECT firstname,lastname,membertype
+  377  FROM Member 
+  378  WHERE MemberType = 'Senior'
+  379  ORDER BY LastName, FirstName"
+  380  mysql -u awkologist -p compbiol  -e "SELECT count(*) from member "
+  381  mysql -u awkologist -p compbiol  -e "SELECT count(*) from Member "
+  382  mysql -u awkologist -p compbiol  -e "SELECT count(distinct) firstname from Member "
+  383  mysql -u awkologist -p compbiol  -e "SELECT distinct) firstname from Member "
+  384  mysql -u awkologist -p compbiol  -e "SELECT distinct firstname from Member "
+  385  mysql -u awkologist -p compbiol  -e "SELECT count(distinct firstname) from Member "
+  386  vim sqledit.sh
+  387  mysql -u awkologist -p compbiol  -e "SELECT count(distinct firstname) from Member "
+  388  ./sqledit.sh 
+  389  vim sqledit.sh
+  390  ./sqledit.sh 
+  391  vim sqledit.sh
+  392  ./sqledit.sh 
+  393  mysql -u awkologist -p compbiol  -e "SELECT e.MemberID "
+  394  mysql -u awkologist -p compbiol  -e "SELECT e.MemberIDSELECT e.MemberID "
+  395  mysql -u awkologist -p compbiol  -e "SELECT e.MemberID "
+  396  mysql -u awkologist -p compbiol  -e "SELECT e.MemberIDSELECT e.MemberIDSELECT e.MemberID "
+  397  vim sqledit.sh
+  398  ./sqledit.sh 
+  399  mysql -u awkologist -p compbiol  -e"show tables "
+  400  mysql -u awkologist -p compbiol  -e"use Entry "
+  401  mysql -u awkologist -p compbiol  -e"select * from Entry "
+  402  mysql -u awkologist -p compbiol  -e"select memberid  from Entry "
+  403  mysql -u awkologist -p compbiol  -e"select memberid  from Entry where tourid = 36 "
+  404  mysql -u awkologist -p compbiol  -e"select memberid  from Entry where tourid = 36 and year = 2006 "
+  405  mysql -u awkologist -p compbiol  -e"select memberid  from Entry where tourid = 36 AND year = 2006 "
+  406  mysql -u awkologist -p compbiol  -e"select memberid  from Entry where tourid = 36 AND year = '2006' "
+  407  mysql -u awkologist -p compbiol  -e"select memberid  from Entry where tourid = 36 AND year = 2012 "
+  408  mysql -u awkologist -p compbiol  -e"select memberid  from Entry "
+  409  mysql -u awkologist -p compbiol  -e"select memberid,year  from Entry where tourid = 36  "
+  410  mysql -u awkologist -p compbiol  -e"select memberid from Entry where tourid <>36 "
+  411  clear
+  412  exit
+  413  clear
+  414  vim sqledit.sh
+  415  mysql -u awkologist -p compbiol  -e"select * from Member cross join type "
+  416  mysql -u awkologist -p compbiol  -e"select * from Member cross join Type "
+  417  mysql -u awkologist -p compbiol  -e"desc  Type "
+  418  mysql -u awkologist -p compbiol  -e"desc Type "
+  419  mysql -u awkologist -p compbiol  -e"select * from member m inner join t on m.MemberType=t.Type "
+  420  mysql -u awkologist -p compbiol  -e"select * from Member m inner join t on m.MemberType=t.Type "
+  421  mysql -u awkologist -p compbiol  -e"select * from Member inner join on MemberType=Type "
+  422  vim sqledit.sh 
+  423  ./sqledit.sh 
+  424  vim sqledit.sh 
+  425  ./sqledit.sh 
+  426  vim sqledit.sh 
+  427  ./sqledit.sh 
+  428  vim sqledit.sh 
+  429  ./sqledit.sh 
+  430  vim sqledit.sh 
+  431  ./sqledit.sh 
+  432  vim sqledit.sh 
+  433  ./sqledit.sh 
+  434  vim sqledit.sh 
+  435  ./sqledit.sh 
+  436  mysql -u awkologist -p compbiol  -e"select * from AllTourInfo "
+  437  mysql -u awkologist -p compbiol  -e" desc Entry "
+  438  mysql -u awkologist -p compbiol  -e" desc Tournament "
+  439  mysql -u awkologist -p compbiol  -e" select Lastname Firstname from AllTourInfo where tourtype = "Open" and year = 2015 "
+  440  mysql -u awkologist -p compbiol  -e" select Lastname Firstname from AllTourInfo where tourtype = "open" and year = 2015 "
+  441  mysql -u awkologist -p compbiol  -e" select Lastname Firstname from AllTourInfo where TourType = "open" and year = 2015 "
+  442  mysql -u awkologist -p compbiol  -e" select Lastname Firstname from AllTourInfo where TourType = 'Open' and year = 2015 "
+  443  mysql -u awkologist -p compbiol  -e" select Lastname, Firstname from AllTourInfo where TourType = 'Open' and year = 2015 "
+  444  exit
+  445  clear
+  446  mysql -u awkologist -p compbiol  -e" show tables"
+  447  mysql -u awkologist -p 
+  448  exit
+  449  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab >> annotation.tab
+  450  ls
+  451  clear
+  452  mysql -u awkologist -p compbiol  -e" CREATE TABLE annotation"
+  453  mysql -u awkologist -p compbiol  -e"create table annotation (gene varchar{7}, function varchar{30}, metabolism varchar{30})"
+  454  vim sqledit.sh 
+  455  ./sqledit.sh 
+  456  mysql -u awkologist -p compbiol  -e" show tables"
+  457  vim sqledit.sh 
+  458  ./sqledit.sh 
+  459  vim sqledit.sh 
+  460  ./sqledit.sh 
+  461  mysql -u awkologist -p
+  462  mysql -u awkologist -p compbiol < annotation.tab
+  463* mysql -u awkologist -p compbiol
+  464  mysql -u awkologist -p annotation < annotation.tab
+  465  mysql -u awkologist -p compbiol  -e" aelect * from annotation"
+  466  mysql -u awkologist -p compbiol  -e" select * from annotation"
+  467  mysql -u awkologist
+  468  mysql -u awkologist -p
+  469  clear
+  470  sudo apt-get mdb tools
+  471  sudo apt-get mdb-tools
+  472  sudo apt-get mdbtools
+  473  sudo apt-get install  mdbtools
+  474  sudo apt-get update -y
+  475  sudo apt-get upgrade -y
+  476  sudo apt-get install mdbtools
+  477  sudo apt-get install mdbtool
+  478  mdb-tables -1 glofclub.accdb
+  479  mysql -u awkologist -p
+  480  ls
+  481  rm -rf annotation.tab 
+  482  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab > annotation
+  483  ls
+  484  vim sqledit.sh 
+  485  ./sqledit.sh 
+  486  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab > annotation.tab
+  487  ls
+  488  mysqlimport --local -d --ignore-lines=0 -u awkologist -p compbiol annotation.tab
+  489  mysql -u awkologist -p compbiol  -e" aelect * from annotation"
+  490  mysql -u awkologist -p compbiol  -e" select * from annotation"
+  491  mysql -u awkologist -p compbiol  -e" select * from expression" >> expression.tab
+  492  ls
+  493  cat expression.tab 
+  494  sudo apt-get install shutter -y
+  495  mysql -u awkologist -p compbiol  -e" select * from annotation" >> annotation
+  496  cat annotation
+  497  ls
+  498  cat annotation.tab 
+  499  rm annotation.tab 
+  500  ls
+  501  clear
+  502  mysql -u awkologist -p compbiol  -e"desc annotation" 
+  503  mysql -u awkologist -p compbiol  -e"desc expression" 
+  504  mysql -u awkologist -p compbiol  -e"SELECT *" 
+  505  vim sqledit.sh 
+  506  ./sqledit.sh 
+  507  vim sqledit.sh 
+  508  ./sqledit.sh 
+  509  vim sqledit.sh 
+  510  ./sqledit.sh 
+  511  vim sqledit.sh 
+  512  ./sqledit.sh 
+  513  vim sqledit.sh 
+  514  ./sqledit.sh 
+  515  vim sqledit.sh 
+  516  ./sqledit.sh 
+  517  vim sqledit.sh 
+  518  mysql -u awkologist -p compbiol  -e"select gene,function,expr_value from annotation join expression" 
+  519  vim sqledit.sh 
+  520  mysql -u awkologist -p compbiol  -e"select gene,function,expr_value from annotation natural join expression" 
+  521  mysql -u awkologist -p compbiol  -e" select * from annotation\G" >> ann
+  522  cat ann
+  523  mysql -u awkologist -p compbiol  -e" select * from annotation pager less -Sin" >> ann
+  524*  
+  525  mysql -u awkologist -p compbiol  -e" select LEFT(*) from annotation" >> ann
+  526  clear
+  527  mysql -u awkologist -p compbiol  -e" \" 
+select a.gene,a.metabolism\
+from annotation a, annotation b \
+where a.metabolism=b.metabolism \
+and a.gene<>b.gene;"
+  528  mysql -u awkologist -p compbiol  -e" \ 
+select a.gene,a.metabolism\
+from annotation a, annotation b \
+where a.metabolism=b.metabolism \
+and a.gene<>b.gene;"
+  529  mysql -u awkologist -p compbiol  -e"  
+select a.gene,a.metabolism\
+from annotation a, annotation b \
+where a.metabolism=b.metabolism \
+and a.gene<>b.gene;"
+  530  mysql -u awkologist -p compbiol  -e"  
+select a.gene,a.metabolism \
+from annotation a, annotation b \
+where a.metabolism=b.metabolism \
+and a.gene<>b.gene;"
+  531  mysql -u awkologist -p compbiol  -e" desc Members" 
+  532  mysql -u awkologist -p compbiol  -e" desc Member" 
+  533  mysql -u awkologist -p compbiol  -e"" 
+  534  mysql -u awkologist -p compbiol  -e"\" 
+select * from Member;
+
+  535  mysql -u awkologist -p compbiol  -e"select * from Member"
+  536  mysql -u awkologist -p compbiol  -e"\
+select lastname,firstname \
+from Member 
+where coach=null;"
+  537  mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach=null"
+  538  mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach='null'"
+  539  mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach=NULL"
+  540  mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach is NULL"
+  541  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab >> a.tsv
+  542  cat a.tsv 
+  543  join -j 1 <(sort expression.tab) <(sort annotation.tab) | column -t | tac
+  544  curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab >> annotation.tsv
+  545  ls
+  546  rm annotation.tsv a.tsv ann
+  547  ls
+  548  join -j 1 <(sort expression.tab) <(sort annotation) | column -t | tac
+  549  join -j 1 <(sort expression.tab) <(sort annotation) | column -t
+  550  clear
+  551* join -j 1 <(sort expression.tab) <(sort annotation) | column -t| 
+  552  join -j 1 <(sort expression.tab) <(sort annotation) | column -t | t
+  553  join -j 1 <(sort expression.tab) <(sort annotation) | column -t | ac
+  554  join -j 1 <(sort expression.tab) <(sort annotation) | column -t | tac
+  555  clear
+  556  mysql -u awkologist -p compbiol  -e"select lastname,firstname from Member where coach is NULL"
+  557  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate
+> from Member
+> WHERE JoinDate BETWEEN "2010-01-01 00:00:00" AND "2010-12-31 00:00:00"
+> ORDER BY JoinDate
+> ;'
+  558  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate BETWEEN "2010-01-01 00:00:00" AND "2010-12-31 00:00:00" ORDER BY JoinDate;'
+  559  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate 2010;'
+  560  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate %y% is 2010;'
+  561  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate is "2010-%c-%d";'
+  562  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate is "2010-%c-%d %h-%i-%s";'
+  563  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate is "2010-%c-%d %h-%i-%s"'
+  564  mysql -u awkologist -p compbiol -e 'select LastName, FirstName,JoinDate from Member WHERE JoinDate is "2010-%c-%d %h-%i-%s";'
+  565  clear
+  566  vim sqledit.sh 
+  567  ./sqledit.sh 
+  568  vim sqledit.sh 
+  569  ./sqledit.sh 
+  570  vim sqledit.sh 
+  571  ./sqledit.sh 
+  572  vim sqledit.sh 
+  573  ./sqledit.sh 
+  574  clear
+  575  mysql -u awkologist -p compbiol -e 'select * from members'
+  576  mysql -u awkologist -p compbiol -e 'select * from Members'
+  577  mysql -u awkologist -p compbiol -e 'select * from Member'
+  578* 
+  579  mysql -u awkologist -p compbiol -e 'show tables'
+  580  vim sqledit.sh 
+  581  ./sqledit.sh 
+  582  vim sqledit.sh 
+  583  ./sqledit.sh 
+  584  vim sqledit.sh 
+  585  ./sqledit.sh 
+  586  vim sqledit.sh 
+  587  ./sqledit.sh 
+  588  vim sqledit.sh 
+  589  ./sqledit.sh 
+  590* 
+  591  FROM Member m
+  592  WHERE m.MemberID  IN 
+  593  vim sqledit.sh 
+  594  mysql -u awkologist -p compbiol -e 'SELECT m.MemberID, m.LastName, m.FirstName
+FROM Member m
+WHERE m.MemberID  IN
+(SELECT e.MemberID from Entry e Group By e.MemberID Having COUNT(DISTINCT Year) = (SELECT COUNT(DISTINCT Year) from Entry));'
+  595  vim sqledit.sh 
+  596  join --help | grep j
+  597  clear
+  598  join -j 1 -o 1.1,2.2,1.2 <(sort -k1 expression.tab) <(sort -k1 annotation.tab) | column -t
+  599  join -j 1 -o 1.1,2.2,1.2 <(sort -k1 expression.tab) <(sort -k1 annotation) | column -t
+  600  join -j 1 -o 1.1,2.2,1.2 <(sort -k1 expression.tab) <(sort -k1 annotation) | column -t | tac
+  601  ls
+  602  history >> working.txt
